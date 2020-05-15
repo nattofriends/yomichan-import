@@ -88,10 +88,6 @@ func main() {
 	flag.Parse()
 
 	if flag.NArg() != 2 {
-		if err := gui(); err == nil {
-			return
-		}
-
 		usage()
 		os.Exit(2)
 	}
